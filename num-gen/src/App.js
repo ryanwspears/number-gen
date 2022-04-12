@@ -39,7 +39,7 @@ console.log(random);
 var guessesLeft = 5;
 
 function guess(num) {
-  if(num === random) {
+  if(num === random.toString()) {
     document.getElementById("guessList").innerHTML += '<h3>' + num + ', </h3>';
     document.getElementById("guessList").innerHTML = '<h1>That is correct! Refresh the page to play again.</h1>';
     return;
